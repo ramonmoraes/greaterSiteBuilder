@@ -8,7 +8,7 @@ The no abstraction frontend lib. <br>
 ## Preemptive FAQ
 ```
 Q: How does it handle re-rendering ?
-A: A wall ain't build to be re-rendered.
+A: A wall ain't meant to be re-rendered.
 ```
 ```
 Q: Why use animation frame to render some incomplete frames ?
