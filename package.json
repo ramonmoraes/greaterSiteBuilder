@@ -1,10 +1,9 @@
 {
   "name": "greater-site-builder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Building with builders!",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html --open",
     "build": "rollup src/index.js --file build/bundle.js --format cjs"
   },
   "repository": {
