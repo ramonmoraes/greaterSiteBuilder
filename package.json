@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ramonmoraes/greaterSiteBuilder#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.8.1"
+    "parcel-bundler": "^1.8.1",
+    "rollup": "^0.62.0"
   }
 }
