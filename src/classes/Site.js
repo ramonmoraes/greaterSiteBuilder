@@ -9,9 +9,9 @@ export default class Site {
 
   render() {
     const { blocks, blockCount } = this;
-    if (blockCount <= blocks.length) {
+    if (blockCount < blocks.length) {
       this.addBlock(blocks[blockCount]);
-      window.requestAnimationFrame(render);
+      window.requestAnimationFrame(() => this.render());
     }
   }
   
