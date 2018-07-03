@@ -1,6 +1,6 @@
 {
   "name": "greater-site-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Building with builders!",
   "main": "build/bundle.js",
   "scripts": {
