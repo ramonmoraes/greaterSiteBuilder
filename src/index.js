@@ -12,4 +12,8 @@ class Hi extends Block {
 }
 
 const blockHi = new Hi();
-new SiteBuilder().withBlock(blockHi).build();
+
+new SiteBuilder()
+    .withBlock(blockHi)
+    .build();
+
