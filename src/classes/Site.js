@@ -1,14 +1,22 @@
 "use strict";
 
-class Site {
+export default class Site {
   constructor(options) {
     this.blocks = options.blocks;
-    render();
+    this.blockCount = 0;
+    this.render();
   }
 
   render() {
-    this.blocks.array.forEach(block => {
-      document.body.appendChild(block);
-    });
+    const { blocks, blockCount } = this;
+    if (blockCount <= blocks.length) {
+      this.addBlock(blocks[blockCount]);
+      window.requestAnimationFrame(render);
+    }
+  }
+  
+  addBlock(block) {
+    document.body.appendChild(block);
+    this.blockCount++;
   }
 }

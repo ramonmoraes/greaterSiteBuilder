@@ -1,24 +1,24 @@
 "use strict";
 
-class Block {
+export default class Block {
   constructor() {
-    buildBlock();
+    return this.buildBlock();
   }
 
   construct() {
-    throw Error("A block must be constructed");
+    throw Error("A block must be constructed!!");
   }
 
   buildBlock() {
-    const material = construct();
+    const material = this.construct();
     const materialType = typeof material;
 
     if (materialType === "string") {
-      return buildFromString(material);
+      return this.buildFromString(material);
     }
 
     if (materialType === "object") {
-      return buildFromObject(material);
+      return this.buildFromObject(material);
     }
 
     throw TypeError(
@@ -34,6 +34,6 @@ class Block {
     if (object instanceof HTMLElement) {
         return object;
     }
-    throw TypeError("I can't handle this object =\ , is unbuildable to me :angry:")
+    throw TypeError("I can't handle this object =\ , is unbuildable to me :angry:!")
   }
 }
