@@ -12,7 +12,7 @@ export default class Site {
     if (blockCount < blocks.length) {
       this.addBlock(blocks[blockCount]);
       window.requestAnimationFrame(() => this.render());
-    }
+    } 
   }
   
   addBlock(block) {

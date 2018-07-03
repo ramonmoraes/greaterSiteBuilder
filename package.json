@@ -1,11 +1,11 @@
 {
-  "name": "greate-site-builder",
+  "name": "greater-site-builder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup src/index.js --file build/bundle.js --format cjs"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/ramonmoraes/greaterSiteBuilder#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.8.1",
-    "rollup": "^0.62.0"
+    "rollup": "0.62.0"
   }
 }

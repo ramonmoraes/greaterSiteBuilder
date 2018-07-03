@@ -1,19 +1,5 @@
-import Block from "./classes/Block";
-import SiteBuilder from "./classes/SiteBuilder";
+import SiteBuilder from './classes/SiteBuilder';
+import Block from './classes/Block';
 
-class Hi extends Block {
-  constructor() {
-    super();
-  }
-
-  construct() {
-    return "Hiiii";
-  }
-}
-
-const blockHi = new Hi();
-
-new SiteBuilder()
-    .withBlock(blockHi)
-    .build();
-
+export default SiteBuilder;
+export { Block }; 
