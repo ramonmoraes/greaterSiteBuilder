@@ -5,7 +5,7 @@
   "main": "build/bundle.js",
   "scripts": {
     "build": "rollup src/index.js --file build/bundle.js --format cjs",
-    "publish": "yarn build && npm publish ./build/bundle.js"
+    "pub": "yarn build && npm publish"
   },
   "repository": {
     "type": "git",
