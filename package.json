@@ -1,10 +1,11 @@
 {
   "name": "greater-site-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Building with builders!",
-  "main": "index.js",
+  "main": "build/bundle.js",
   "scripts": {
-    "build": "rollup src/index.js --file build/bundle.js --format cjs"
+    "build": "rollup src/index.js --file build/bundle.js --format cjs",
+    "publish": "yarn build && npm publish build/bundle.js"
   },
   "repository": {
     "type": "git",
