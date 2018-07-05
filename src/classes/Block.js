@@ -1,10 +1,6 @@
 "use strict";
 
 export default class Block {
-  constructor() {
-    return this.buildBlock();
-  }
-
   construct() {
     throw Error("A block must be constructed!!");
   }

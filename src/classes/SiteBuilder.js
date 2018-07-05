@@ -7,12 +7,12 @@ export default class SiteBuilder {
   }
 
   withBlock(block) {
-    this.blocks.push(block);
+    this.blocks.push(block.construct());
     return this;
   }
 
-  withBlocks(blocks = []) {
-    this.blocks.concat(blocks);
+  withBlocks(arrayOfBlocks = []) {
+    this.blocks.concat(arrayOfBlocks.map(block => block.construct()));
     return this;
   }
 
