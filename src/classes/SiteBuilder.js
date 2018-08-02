@@ -4,6 +4,12 @@ import Site from './Site';
 export default class SiteBuilder {
   constructor() {
     this.blocks = [];
+    this.mold = document.body;
+  }
+
+  withMold(mold) {
+    this.mold = mold;
+    return this;
   }
 
   withBlock(block) {

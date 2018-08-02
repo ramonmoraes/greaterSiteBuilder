@@ -16,7 +16,7 @@ export default class Site {
   }
   
   addBlock(block) {
-    document.body.appendChild(block);
+    this.mold.appendChild(block);
     this.blockCount++;
   }
 }
