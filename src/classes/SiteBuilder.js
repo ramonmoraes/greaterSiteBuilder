@@ -18,7 +18,7 @@ export default class SiteBuilder {
   }
 
   withBlocks(arrayOfBlocks = []) {
-    this.blocks.concat(arrayOfBlocks.map(block => block.construct()));
+    this.blocks.concat(arrayOfBlocks.map(block => block.buildBlock()));
     return this;
   }
 
