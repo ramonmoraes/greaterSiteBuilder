@@ -13,7 +13,7 @@ export default class SiteBuilder {
   }
 
   withBlock(block) {
-    this.blocks.push(block.construct());
+    this.blocks.push(block.buildBlock());
     return this;
   }
 
