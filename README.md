@@ -20,3 +20,31 @@ A: A block must be attached to some thing, here ain't minecraft, blocks don't fl
 Q: What kind of classes can be "extended" ?
 A: A Block and a Builder, the builder construct with blocks.
 ```
+
+## Using
+
+### Getting our first Hello World!
+```js
+class HelloBlock extends Block {
+    construct() {
+        return "Hello World!"
+    }
+}
+
+  new SiteBuilder()
+    .withBlock(new HelloBlock)
+    .build()
+```
+
+or if you are a parrot
+```js
+class HelloBlock extends Block {
+    construct() {
+        return "Hello World!"
+    }
+}
+const parrotBlocks = [new HelloWorld(), new HelloWorld(), new HelloWorld()];
+  new SiteBuilder()
+    .withBlocks(parrotBlocks)
+    .build()
+```
