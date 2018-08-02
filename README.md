@@ -31,7 +31,7 @@ class HelloBlock extends Block {
     }
 }
 
-  new SiteBuilder()
+new SiteBuilder()
     .withBlock(new HelloBlock)
     .build()
 ```
@@ -43,8 +43,10 @@ class HelloBlock extends Block {
         return "Hello World!"
     }
 }
+
 const parrotBlocks = [new HelloWorld(), new HelloWorld(), new HelloWorld()];
-  new SiteBuilder()
+
+new SiteBuilder()
     .withBlocks(parrotBlocks)
     .build()
 ```
