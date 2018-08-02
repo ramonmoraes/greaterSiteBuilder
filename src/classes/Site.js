@@ -3,6 +3,8 @@
 export default class Site {
   constructor(options) {
     this.blocks = options.blocks;
+    this.mold = options.mold;
+    
     this.blockCount = 0;
     this.render();
   }
